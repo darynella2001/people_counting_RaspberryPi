@@ -1,7 +1,6 @@
-schedule
-numpy
-argparse
-imutils
-dlib
-opencv-python
-scipy
+dlib==19.23.1
+imutils==0.5.4
+numpy==1.21.5
+opencv_python==4.5.5.64
+schedule==1.1.0
+scipy==1.8.0
