@@ -10,7 +10,7 @@ import argparse, imutils
 import time, dlib, cv2, datetime
 from itertools import zip_longest
 
-
+# python main.py --prototxt mobilenet_ssd/mobilenet.prototxt --model mobilenet_ssd/mobilenet_iter_73000.caffemodel --input videos/example_01.mp4
 
 #python main.py --prototxt mobilenet_ssd/MobileNetSSD_deploy.prototxt --model mobilenet_ssd/MobileNetSSD_deploy.caffemodel --input videos/example_01.mp4
 
