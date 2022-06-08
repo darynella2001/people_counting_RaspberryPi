@@ -26,7 +26,7 @@ class GPSModuleWrapper:
             if curr_counter > SEND_SERVER_COUNTER:
                 service.send_gps_data(lat, long)
                 curr_counter = 0
-                
+
             time.sleep(1)
 
 
@@ -44,8 +44,6 @@ class GPSModuleWrapper:
 
         return latitude, longitude
 
-    #https://github.com/girish946/python-gps/blob/master/gps.py
-    #filtering: https://github.com/jakee417/Pi-kalman
     def __to_degrees(self, lats, longs):
         """
         converts the raw values of latitude and longitude from gps module into
@@ -68,41 +66,3 @@ class GPSModuleWrapper:
         lon_str = lon_deg +  "["+ lon_mins + "(" + str(lon_secs) + ')'
 
         return [lat_str, lon_str]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        # s = gps_data.split(",")
-
-        # if s[7] == '0':
-        #     print("No sattelite data available")
-
-        #     return
-
-
-        # time = s[1][0:2] + ":" + s[1][2:4] + ":" + s[1][4:6]
-        # lat = decode(s[2])
-        # dirLat = s[3]
-        # lon = decode(s[4])
-        # dirLon = s[5]
-        # alt = s[9] + " m"
-
-        # return lat, lon
